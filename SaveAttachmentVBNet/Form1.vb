@@ -15,9 +15,9 @@ Public Class Form1
             Dim count As Integer = 0
             Dim service As New ExchangeService(ExchangeVersion.Exchange2010_SP2)
             'set username, password
-            service.Credentials = New WebCredentials("ytsairport", "Yamato112211!!")
+            service.Credentials = New WebCredentials("xxxxx", "xxxxx")
             'set email server
-            service.AutodiscoverUrl("ytsairport@message.sg")
+            service.AutodiscoverUrl("xxxxx")
             Dim view As ItemView = New ItemView(10)
             Dim findResults As FindItemsResults(Of Item) = service.FindItems(WellKnownFolderName.Inbox, New ItemView(10))
             If findResults IsNot Nothing AndAlso findResults.Items IsNot Nothing AndAlso findResults.Items.Count > 0 Then
